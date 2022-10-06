@@ -15,7 +15,40 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <section>
+      <picture>
+        
+          <!-- landscape images start -->
+
+          <source srcset="images/landscape320x180.jpg,
+          images/landcape640x360.jpg 2x,
+          images/landscape960x540.jpg 3x" media="(max-width: 320px)">
+          <source srcset="images/landscape480x270.jpg,
+          images/landscape960x540.jpg 2x,
+          images/landscape1440x810.jpg 3x" media="(max-width: 480px)">
+          <source srcset="images/landscape720x405.jpg,
+          images/landscape1440x810.jpg 2x,
+          images/landscape2160x1215.jpg 3x" media="(max-width: 720px)">
+          <source srcset="images/landscape960x540.jpg,
+          images/landscape1920x1080.jpg 2x,
+          images/landscape2880x1621.jpg 3x" media="(max-width: 960px)">
+            
+          <!-- square images start -->
+
+          <source srcset="images/square800.jpg,
+          images/square1600.jpg 2x,
+          images/square2400.jpg 3x" media="(min-width: 1600px)">
+          <source srcset="images/square640.jpg,
+          images/square1280.jpg 2x,
+          images/square1920.jpg 3x" media="(min-width: 1280px)">
+          <source srcset="images/square480.jpg,
+          images/square960.jpg 2x,
+          images/square1440.jpg 3x" media="(min-width: 960px)">
+          <img class="square" src="images/museum.jpg" alt="Picture of the inside of a museum">
+        
+      </picture>
+    </section>
+
 
   </header>
 </body>
